@@ -64,7 +64,6 @@ public class WebController {
 		return new ModelAndView("redirect:/");
 				
 	}	
-	//@RequestMapping("/nobooking")
 	public ModelAndView noBookingAvailable() {
 
 		logger.info("Invoked Circuit Breaker");
