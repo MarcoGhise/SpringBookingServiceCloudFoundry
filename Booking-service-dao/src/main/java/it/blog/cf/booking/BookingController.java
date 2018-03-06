@@ -23,23 +23,16 @@ public class BookingController {
 	@RequestMapping("/list")
     public List<Booking> getBooking(){
 		
-		logger.info("Get Bookings");
+	logger.info("Get Bookings");
 		
         return repository.findAll();
     }
 
-	/*
-	 * 	POST http://localhost:8080/add HTTP/1.1
-		User-Agent: Fiddler
-		Content-Type: application/x-www-form-urlencoded
-
-		code=JKS22&flightNumber=AZ-231&name=Marco&surname=Ghise&seat=1A
-	 */
-	@RequestMapping(method = RequestMethod.POST, path="/add")
+   	@RequestMapping(method = RequestMethod.POST, path="/add")
     public ResponseEntity<String> addBooking(@RequestBody Booking booking){
     	
 		
-		logger.info("Add booking:" + booking.getCode());
+	logger.info("Add booking:" + booking.getCode());
 		
         repository.save(booking);
         
