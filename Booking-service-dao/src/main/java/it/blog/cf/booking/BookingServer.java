@@ -8,7 +8,6 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-//@EnableFeignClients
 public class BookingServer {
 
 	public static void main(String[] args) {
