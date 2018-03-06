@@ -1,7 +1,3 @@
 spring:  
   application:
-    name: techannotation-booking-service-dao
-
-#security:
-#  basic:
-#    enabled: false        
+    name: techannotation-booking-service-dao     
